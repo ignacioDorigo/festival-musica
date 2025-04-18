@@ -1,0 +1,29 @@
+{
+  "name": "festival-musica",
+  "version": "1.0.0",
+  "description": "Proyecto de Musica",
+  "keywords": [
+    "sass",
+    "html",
+    "css",
+    "js",
+    "npm",
+    "gulp"
+  ],
+  "homepage": "https://github.com/ignacioDorigo/festival-musica#readme",
+  "bugs": {
+    "url": "https://github.com/ignacioDorigo/festival-musica/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ignacioDorigo/festival-musica.git"
+  },
+  "license": "ISC",
+  "author": "Ignacio Dorigo",
+  "type": "module"
+  ,
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
