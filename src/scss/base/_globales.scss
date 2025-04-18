@@ -1,0 +1,29 @@
+@use "variables" as variables;
+
+img {
+  width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* apply a natural box layout model to all elements, but allowing components to change */
+html {
+  box-sizing: border-box;
+  font-family: variables.$fuente_principal;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-size: 62.5%;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}

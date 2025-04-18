@@ -20,10 +20,16 @@
   },
   "license": "ISC",
   "author": "Ignacio Dorigo",
-  "type": "module"
-  ,
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "gulp-sass": "^6.0.1"
+  },
+  "dependencies": {
+    "gulp": "^5.0.0",
+    "sass": "^1.86.3"
   }
 }
