@@ -1,0 +1,10 @@
+@use "../base/variables" as variables;
+@use "../base/mixin" as mixin;
+
+.galeria {
+  h2 {
+    color: variables.$negro;
+    text-align: center;
+    font-size: 6rem;
+  }
+}
