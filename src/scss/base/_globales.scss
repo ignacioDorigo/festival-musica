@@ -8,6 +8,7 @@ h1,
 h2,
 h3 {
   margin: 0;
+  font-weight: 900;
 }
 
 a {
@@ -30,4 +31,8 @@ html {
 
 section {
   padding: 10rem 0rem;
+}
+
+ol,ul{
+  list-style: none;
 }

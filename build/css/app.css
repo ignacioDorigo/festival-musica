@@ -6,6 +6,7 @@ h1,
 h2,
 h3 {
   margin: 0;
+  font-weight: 900;
 }
 
 a {
@@ -29,6 +30,10 @@ html {
 
 section {
   padding: 10rem 0rem;
+}
+
+ol, ul {
+  list-style: none;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -483,4 +488,74 @@ template {
   line-height: 2;
   font-size: 2rem;
   margin-top: 0;
+}
+
+.lineup {
+  background-color: #f53757;
+}
+.lineup h2 {
+  color: #ffffff;
+  text-align: center;
+  font-size: 6rem;
+}
+.lineup .contenedor {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 120rem;
+}
+
+.fecha .fecha__texto {
+  text-align: center;
+  color: #ffffff;
+  font-size: 3rem;
+  text-transform: uppercase;
+}
+
+.fecha__escenarios {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 3rem;
+}
+@media (min-width: 768px) {
+  .fecha__escenarios {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+
+.fecha_container p {
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3rem;
+  padding: 4rem;
+  margin: 0;
+}
+
+.bg-amarillo {
+  background-color: #fdda00;
+}
+.bg-amarillo li:nth-child(odd) {
+  background-color: rgb(255, 226.5019762846, 49);
+}
+
+.bg-verde {
+  background-color: #4db7b4;
+}
+.bg-verde li:nth-child(odd) {
+  background-color: rgb(113.312, 197.688, 195.3);
+}
+
+.cantantes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.cantantes li {
+  font-size: 2rem;
+  padding: 2rem;
+}
+.cantantes li span {
+  font-weight: bold;
 }

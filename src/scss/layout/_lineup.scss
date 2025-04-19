@@ -1,0 +1,70 @@
+@use "../base/variables" as variables;
+@use "../base/mixin" as mixin;
+@use "sass:color";
+
+.lineup {
+  background-color: variables.$rosado;
+
+  h2 {
+    color: variables.$blanco;
+    text-align: center;
+    font-size: 6rem;
+  }
+  .contenedor {
+    @include mixin.contenedor;
+  }
+}
+
+.fecha {
+  .fecha__texto {
+    text-align: center;
+    color: variables.$blanco;
+    font-size: 3rem;
+    text-transform: uppercase;
+  }
+}
+
+.fecha__escenarios {
+  @include mixin.grid(1, 3rem);
+  @include mixin.tablet() {
+    @include mixin.grid(2, 5rem);
+  }
+}
+
+.fecha_container {
+  p {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 3rem;
+    padding: 4rem;
+    margin: 0;
+  }
+}
+
+.bg-amarillo {
+  background-color: variables.$amarillo;
+  li:nth-child(odd) {
+    background-color: color.adjust(variables.$amarillo, $lightness: 10%);
+  }
+}
+
+.bg-verde {
+  background-color: variables.$verde;
+  li:nth-child(odd) {
+    background-color: color.adjust(variables.$verde, $lightness: 10%);
+  }
+}
+
+.cantantes {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  li {
+    font-size: 2rem;
+    padding: 2rem;
+    span {
+      font-weight: bold;
+    }
+  }
+}
