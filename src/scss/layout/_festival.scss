@@ -1,0 +1,30 @@
+@use "../base/variables" as variables;
+@use "../base/mixin" as mixin;
+
+.festival {
+  @include mixin.contenedor;
+  @include mixin.tablet() {
+    @include mixin.grid(2);
+  }
+}
+
+.festival__texto {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  h2 {
+    font-size: 4.5rem;
+    font-weight: 900;
+  }
+  .festival__fecha {
+    color: variables.$verde;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+  .festival__descripcion {
+    line-height: 2;
+    font-size: 2rem;
+    margin-top: 0;
+  }
+}

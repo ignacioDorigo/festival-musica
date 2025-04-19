@@ -12,6 +12,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
 
+    <!-- SASS COMPILADO A CSS -->
+    <link rel="stylesheet" href="build/css/app.css" as="style">
+
     <!-- ICONO PESTANA -->
     <link rel="icon" href="src/img/favicon/music-favicon.png" type="icon">
 </head>
@@ -30,6 +33,35 @@
             </nav>
         </header>
     </div>
+
+    <div class="video">
+        <div class="video__overlay">
+            <div class="video__texto">
+                <h2 class="video__titulo">Techno & EDM Festival</h2>
+                <p class="video__ubicacion">Mayo 2025, Tortuguitas, Buenos Aires.</p>
+            </div>
+        </div>
+        <video autoplay muted loop>
+            <source src="src/video/dj.mp4" type="video/mp4">
+            <source src="src/video/dj.ogv" type="video/ogv">
+            <source src="src/video/dj.webm" type="video/webm">
+        </video>
+    </div>
+
+    <section class="festival">
+        <img class="festival__img" src="src/img/imagen_dj.webp" alt="imagen de dj" loading="lazy">
+        <div class="festival__texto">
+            <h2 class="festival__titulo">Techno & EDM Festival</h2>
+            <p class="festival__fecha">Mayo 2025, Tortuguitas, Buenos Aires.</p>
+            <p class="festival__descripcion">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet, officiis
+                quod eius, corporis possimus suscipit ea vero officia quia natus, ducimus quibusdam deleniti aliquam
+                alias qui modi exercitationem magni hic. </p>
+        </div>
+    </section>
+
+    <section class="lineup" id="lineup">
+        
+    </section>
 </body>
 
 </html>

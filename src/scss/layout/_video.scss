@@ -1,0 +1,64 @@
+@use "../base/variables" as variables;
+@use "../base/mixin" as mixin;
+@use "sass:color";
+
+.video {
+  position: relative;
+
+  .video__overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      270deg,
+      rgba(117, 47, 151, 0.6),
+      rgba(26.5909090909, 10.6818181818, 34.3181818182, 0.9)
+    );
+
+    display: flex;
+    align-items: center;
+  }
+  video {
+    width: 100%;
+    height: 70rem;
+    object-fit: cover;
+  }
+}
+
+.video__texto {
+  @include mixin.contenedor;
+  z-index: 99;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: variables.$blanco;
+
+  @include mixin.tablet() {
+    align-items: start;
+  }
+
+  h2 {
+    font-weight: 900;
+  }
+  .video__titulo {
+    font-size: 6.5rem;
+    text-align: center;
+    margin: 0;
+    @include mixin.tablet {
+      text-align: start;
+    }
+  }
+
+  .video__ubicacion {
+    display: inline-block;
+    background-color: variables.$rosado;
+    font-weight: bold;
+    font-size: 2rem;
+    padding: 1rem;
+    text-align: center;
+    @include mixin.tablet() {
+      margin-top: 0;
+    }
+  }
+}

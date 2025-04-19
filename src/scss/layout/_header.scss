@@ -1,0 +1,49 @@
+@use "../base/variables" as variables;
+@use "../base/mixin" as mixin;
+
+.header-bg {
+  background-color: variables.$verde;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  position: relative;
+}
+
+.header {
+  @include mixin.contenedor;
+  padding: 2rem 0rem;
+
+  @include mixin.tablet() {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  h1 {
+    text-align: center;
+    margin: 0;
+    font-weight: 900;
+    font-size: 3.5rem;
+  }
+  h1,
+  a {
+    color: variables.$blanco;
+  }
+  a {
+    font-size: 2rem;
+    &:hover {
+      color: variables.$amarillo;
+    }
+  }
+}
+
+.navegacion-principal {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  gap: 2rem;
+  margin-top: 2rem;
+  @include mixin.tablet() {
+    margin-top: 0;
+    flex-direction: row;
+  }
+}
