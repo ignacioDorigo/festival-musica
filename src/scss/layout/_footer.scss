@@ -1,0 +1,15 @@
+@use "../base/variables" as variables;
+@use "../base/mixin" as mixin;
+
+
+.footer {
+  background-color: variables.$rosado;
+  padding: 2rem 0rem;
+
+  .footer__texto {
+    text-align: center;
+    font-size: 2rem;
+    color: variables.$blanco;
+    // margin: 0;
+  }
+}

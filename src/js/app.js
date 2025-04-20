@@ -25,12 +25,12 @@ function mostrarImg(indice) {
   const modal = document.createElement("DIV");
   modal.classList.add("modal");
 
-    const img_modal = document.createElement("IMG");
-    img_modal.src = `src/img/galeria/${indice}.webp`;
-    img_modal.loading = "lazy";
-    img_modal.alt = "Imagen de galeria";
-    img_modal.classList.add("imgModal");
-    modal.appendChild(img_modal);
+  const img_modal = document.createElement("IMG");
+  img_modal.src = `src/img/galeria/${indice}.webp`;
+  img_modal.loading = "lazy";
+  img_modal.alt = "Imagen de galeria";
+  img_modal.classList.add("imgModal");
+  modal.appendChild(img_modal);
 
   const btnModal = document.createElement("P");
   btnModal.textContent = "X";
@@ -44,4 +44,14 @@ function mostrarImg(indice) {
 function cerrarModal() {
   const modal = document.querySelector(".modal");
   modal.remove();
+}
+
+function navFijo() {
+  const sectionFestival = document.querySelector(".festival");
+  const nav = document.querySelector(".header-bg");
+  if (sectionFestival.getBoundingClientRect().bottom > 1) {
+    nav.classList.add("fixed");
+  } else {
+    nav.classList.remove("fixed");
+  }
 }

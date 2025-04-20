@@ -36,6 +36,8 @@ section {
 ol,
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -604,6 +606,7 @@ template {
 .galeria-imagenes img {
   width: 100%;
   height: 100%;
+  object-fit: cover;
   cursor: pointer;
 }
 
@@ -631,4 +634,95 @@ template {
   object-fit: cover;
   height: 50rem;
   margin-bottom: 3rem;
+}
+
+.boletos {
+  background-color: #4db7b4;
+}
+.boletos h2 {
+  text-align: center;
+  font-size: 6rem;
+  color: #ffffff;
+}
+
+.pases {
+  margin: 0 auto;
+  width: 95%;
+  max-width: 120rem;
+}
+@media (min-width: 768px) {
+  .pases {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+  }
+}
+.pases .pase__duracion {
+  text-align: center;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 3.6rem;
+}
+
+.pase {
+  cursor: pointer;
+  transition: scale 0.3s ease-in;
+}
+@media (min-width: 768px) {
+  .pase:hover {
+    scale: 1.1;
+  }
+}
+
+.pase__header {
+  background-color: #f53757;
+}
+.pase__header p {
+  color: #ffffff;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.4rem;
+  padding: 2rem;
+  margin: 0;
+}
+
+.pase__body {
+  background-color: #ffffff;
+}
+.pase__body ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.pase__body ul li {
+  font-size: 2rem;
+  padding: 2rem;
+  border-bottom: 2px solid #e1e1e1;
+}
+
+.pase__footer {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.pase__footer p {
+  background-color: #752f97;
+  color: #ffffff;
+  width: 90%;
+  font-weight: bold;
+  font-size: 2.8rem;
+  text-align: center;
+  padding: 1rem 0rem;
+  border-radius: 1rem;
+}
+
+.footer {
+  background-color: #f53757;
+  padding: 2rem 0rem;
+}
+.footer .footer__texto {
+  text-align: center;
+  font-size: 2rem;
+  color: #ffffff;
 }

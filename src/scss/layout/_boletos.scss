@@ -1,0 +1,81 @@
+@use "../base/variables" as variables;
+@use "../base/mixin" as mixin;
+
+.boletos {
+  background-color: variables.$verde;
+  h2 {
+    text-align: center;
+    font-size: 6rem;
+    color: variables.$blanco;
+  }
+}
+
+.pases {
+  @include mixin.contenedor();
+
+  @include mixin.tablet() {
+    @include mixin.grid(2);
+  }
+
+  .pase__duracion {
+    text-align: center;
+    color: variables.$blanco;
+    font-weight: 900;
+    font-size: 3.6rem;
+  }
+}
+
+.pase {
+  cursor: pointer;
+  transition: scale 0.3s ease-in;
+
+  @include mixin.tablet() {
+    &:hover {
+      scale: 1.1;
+    }
+  }
+}
+
+.pase__header {
+  background-color: variables.$rosado;
+  p {
+    color: variables.$blanco;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.4rem;
+    padding: 2rem;
+    margin: 0;
+  }
+}
+
+.pase__body {
+  background-color: variables.$blanco;
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    li {
+      font-size: 2rem;
+      padding: 2rem;
+      border-bottom: 2px solid #e1e1e1;
+    }
+  }
+}
+
+.pase__footer {
+  background-color: variables.$blanco;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  p {
+    background-color: variables.$morado;
+    color: variables.$blanco;
+    width: 90%;
+    font-weight: bold;
+    font-size: 2.8rem;
+    text-align: center;
+    padding: 1rem 0rem;
+    border-radius: 1rem;
+  }
+}
