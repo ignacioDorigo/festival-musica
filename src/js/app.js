@@ -1,5 +1,6 @@
 document.addEventListener("DOMContentLoaded", function () {
   crearGaleria();
+  window.addEventListener("scroll", navFijo);
 });
 
 function crearGaleria() {
@@ -49,7 +50,7 @@ function cerrarModal() {
 function navFijo() {
   const sectionFestival = document.querySelector(".festival");
   const nav = document.querySelector(".header-bg");
-  if (sectionFestival.getBoundingClientRect().bottom > 1) {
+  if (sectionFestival.getBoundingClientRect().bottom < 100) {
     nav.classList.add("fixed");
   } else {
     nav.classList.remove("fixed");

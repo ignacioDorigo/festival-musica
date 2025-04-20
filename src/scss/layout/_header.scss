@@ -4,8 +4,15 @@
 .header-bg {
   background-color: variables.$verde;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.5);
-  z-index: 99;
+  z-index: 999;
   position: relative;
+
+  @include mixin.tablet() {
+    &.fixed {
+      position: fixed;
+      width: 100%;
+    }
+  }
 }
 
 .header {
